@@ -12,6 +12,8 @@
 - [PLUGINS.md](https://raw.githubusercontent.com/sepehr071/iran-mcp/main/PLUGINS.md): plugins and skills, agent compatibility, update flow
 - [README.md](https://raw.githubusercontent.com/sepehr071/iran-mcp/main/README.md): overview (English)
 - [README.fa.md](https://raw.githubusercontent.com/sepehr071/iran-mcp/main/README.fa.md): overview (Persian)
+- [prompt.md](prompt.md): paste into an agent with only a site name; it builds a read-only MCP server and opens a pull request to alizare84/iran-mcp
+- [format.md](format.md): the server contract that prompt follows
 
 ## Servers
 
