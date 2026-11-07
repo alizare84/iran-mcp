@@ -2,7 +2,7 @@
 
 # iran-mcp
 
-72 read-only MCP servers and 896 tools for public Iranian websites. Prices are in Toman. Every tool, one line each, is in [TOOLS.md](TOOLS.md).
+77 read-only MCP servers and 994 tools for public Iranian websites. Prices are in Toman. Every tool, one line each, is in [TOOLS.md](TOOLS.md).
 
 This tree tracks [sepehr071/iran-mcp](https://github.com/sepehr071/iran-mcp). New sites are added here by pull request.
 
@@ -24,6 +24,7 @@ This tree tracks [sepehr071/iran-mcp](https://github.com/sepehr071/iran-mcp). Ne
 | [emalls-ir-mcp](https://github.com/sepehr071/emalls-ir-mcp) | [Emalls](https://emalls.ir) (price comparison) | 10 | Products across Iranian shops, every shop's offer, price history, shops |
 | [mobile-ir-mcp](https://github.com/sepehr071/mobile-ir-mcp) | [Mobile.ir](https://www.mobile.ir) | 17 | Phone specs, shop prices, price history, used phones, SIM numbers |
 | [zoomit-mcp](https://github.com/sepehr071/zoomit-mcp) | [Zoomit](https://www.zoomit.ir/product) (Zoobin) | 12 | Phone, laptop and GPU specs, shop prices, price history, comparisons, reviews |
+| [snappshop-mcp](https://github.com/sepehr071/snappshop-mcp) | [Snapp! Shop](https://snappshop.ir) | 13 | Marketplace search, categories, every seller's offer in Toman, reviews, flash sales |
 
 ### 🏠 Classifieds
 
@@ -108,6 +109,7 @@ This tree tracks [sepehr071/iran-mcp](https://github.com/sepehr071/iran-mcp). Ne
 | [jobvision-mcp](https://github.com/sepehr071/jobvision-mcp) | [Jobvision](https://jobvision.ir) | 14 | Job search, advertised pay, companies, interview reports, job market |
 | [irantalent-mcp](https://github.com/sepehr071/irantalent-mcp) | [IranTalent](https://www.irantalent.com) | 11 | Job search, companies, employee reviews, salary reports |
 | [quera-mcp](https://github.com/sepehr071/quera-mcp) | [Quera](https://quera.org) | 14 | Tech jobs, companies, salaries, contests, programming problems, courses and bootcamps |
+| [iran-jobs-mcp](https://github.com/sepehr071/iran-jobs-mcp) | [IranTalent](https://www.irantalent.com), [Jobinja](https://jobinja.ir), [Jobvision](https://jobvision.ir) | 37 | Job ads, companies, reviews, interview reports and pay on three job sites side by side |
 | [ponisha-mcp](https://github.com/sepehr071/ponisha-mcp) | [Ponisha](https://ponisha.ir) | 14 | Freelance projects and bids, freelancers, services, skill demand |
 | [karlancer-mcp](https://github.com/sepehr071/karlancer-mcp) | [Karlancer](https://www.karlancer.com) | 14 | Freelance projects, freelancers, services, market rates, trending skills |
 
@@ -120,6 +122,7 @@ This tree tracks [sepehr071/iran-mcp](https://github.com/sepehr071/iran-mcp). Ne
 | [ifb-mcp](https://github.com/sepehr071/ifb-mcp) | [Iran Fara Bourse](https://www.ifb.ir) | 16 | Bond and sukuk yields, treasury bills, yield curve, IPOs, announcements, market stats (Rial) |
 | [fipiran-mcp](https://github.com/sepehr071/fipiran-mcp) | [Fipiran](https://fipiran.ir) | 11 | Mutual funds and ETFs: NAV, returns, size, managers, fund comparison |
 | [ime-mcp](https://github.com/sepehr071/ime-mcp) | [Iran Mercantile Exchange](https://www.ime.co.ir) | 14 | Commodity trades, supply offers, price history, market totals, options, deposit certificates (Rial) |
+| [iran-brokers-mcp](https://github.com/sepehr071/iran-brokers-mcp) | [Mofid](https://www.emofid.com), [Agah](https://agah.com) | 22 | Stocks, ETFs and funds, options, bonds and sukuk, gold and coin, screeners, Codal news, through two brokers (Rial) |
 | [cbi-mcp](https://github.com/sepehr071/cbi-mcp) | [Central Bank of Iran](https://www.cbi.ir) | 11 | Official exchange rates and their history, inflation, policy rates, liquidity, bond auctions, news (Rial) |
 | [amar-mcp](https://github.com/sepehr071/amar-mcp) | [Statistical Centre of Iran](https://amar.org.ir) | 12 | CPI inflation, unemployment, population, GDP, producer prices, release tables and calendar |
 
@@ -135,6 +138,8 @@ This tree tracks [sepehr071/iran-mcp](https://github.com/sepehr071/iran-mcp). Ne
 | [iran-quake-mcp](https://github.com/sepehr071/iran-quake-mcp) | [IRSC](https://irsc.ut.ac.ir), [USGS](https://earthquake.usgs.gov), [EMSC](https://www.emsc-csem.org) | 5 | Latest and strongest earthquakes in Iran, history search, event detail, activity stats |
 | [qavanin-mcp](https://github.com/sepehr071/qavanin-mcp) | [qavanin.ir](https://qavanin.ir) | 7 | 168,000 laws, regulations and court votes: search, full text, one article, amendments, related documents |
 | [iran-tax-mcp](https://github.com/sepehr071/iran-tax-mcp) | [tax.gov.ir](https://tax.gov.ir), [stuffid.tax.gov.ir](https://stuffid.tax.gov.ir), [regulation.tax.gov.ir](https://regulation.tax.gov.ir) | 6 | E-invoice goods/service IDs with VAT rate, activity codes, property transaction values, tax laws and circulars, official FAQ |
+| [iran-insurance-mcp](https://github.com/sepehr071/iran-insurance-mcp) | [BimeBazar](https://bimebazar.com), [Azki](https://www.azki.com) | 18 | Insurers and ratings, travel, third-party, car body, motorcycle, fire and health quotes side by side |
+| [rasmio-mcp](https://github.com/sepehr071/rasmio-mcp) | [Rasmio](https://rasmio.com) | 8 | Iranian companies, board members, Official Gazette ads, products, brands, trademarks and patents (Rial) |
 | [varzesh3-mcp](https://github.com/sepehr071/varzesh3-mcp) | [Varzesh3](https://www.varzesh3.com) | 18 | Live scores, league tables, fixtures, teams, players, top scorers, transfers, TV schedule, news |
 | [gamefa-mcp](https://github.com/sepehr071/gamefa-mcp) | [Gamefa](https://gamefa.com) | 13 | Game and film news, reviews with scores, game and film profiles, upcoming releases |
 | [iran-vod-mcp](https://github.com/sepehr071/iran-vod-mcp) | [Filimo](https://www.filimo.com), [Namava](https://www.namava.ir) | 13 | Films and series on Filimo and Namava: search, where to watch, title details, episodes, new releases, collections, plans |

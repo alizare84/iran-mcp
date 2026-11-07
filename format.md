@@ -26,7 +26,7 @@
 | نسخه | یکسان در `pyproject.toml` و `server.json` | `0.1.0` |
 | لایسنس | MIT | |
 
-دسته را از دسته‌های موجود انتخاب کنید: `food` ، `shopping` ، `beauty` ، `fashion` ، `classifieds` ، `cars` ، `travel` ، `maps` ، `health` ، `books` ، `learning` ، `jobs` ، `freelance` ، `software` ، `cloud` ، `prices` ، `stocks` ، `economy` ، `news` ، `sports` ، `entertainment` ، `video` ، `calendar` ، `quakes` ، `law` ، `tax`. دستهٔ تازه فقط وقتی لازم است که هیچ‌کدام معنی را نرساند؛ آن وقت علاوه بر `SERVERS` باید `USE` در `catalog.py` و `GROUPS` در `scripts/banner.py` هم پر شود.
+دسته را از دسته‌های موجود انتخاب کنید: `food` ، `shopping` ، `beauty` ، `fashion` ، `classifieds` ، `cars` ، `travel` ، `maps` ، `health` ، `books` ، `learning` ، `jobs` ، `freelance` ، `software` ، `cloud` ، `prices` ، `stocks` ، `economy` ، `news` ، `sports` ، `entertainment` ، `video` ، `calendar` ، `quakes` ، `law` ، `tax` ، `insurance` ، `companies`. دستهٔ تازه فقط وقتی لازم است که هیچ‌کدام معنی را نرساند؛ آن وقت علاوه بر `SERVERS` باید `USE` در `catalog.py` و `GROUPS` در `scripts/banner.py` هم پر شود.
 
 ## درختی که شرکت یا فرد می‌سازد
 

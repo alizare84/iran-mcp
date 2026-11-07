@@ -21,7 +21,7 @@ The tools below come from the `asalbanoo-mcp` MCP server. If they are not availa
 - `ab_shop_info`: Read one of the shop's policy pages as plain text: FAQ as question/answer pairs, other pages as text.
 - `ab_blog_posts`: List Asal Banoo blog posts (skin and hair care guides, routines, "X vs Y" comparisons), newest first.
 - `ab_blog_post`: Read one blog post as plain text, plus the products and categories it links to.
-- `ab_product`: Get one product: price/discount (Toman), stock (exact count when low), every size/color variant with its own
+- `ab_product`: Get one product: price, stock, every size/color variant with its own price and stock, facts, images.
 - `ab_reviews`: Read customers' reviews and questions about a product (newest first) with the shop's answers.
 
 ## Rules
@@ -30,3 +30,9 @@ The tools below come from the `asalbanoo-mcp` MCP server. If they are not availa
 - Read-only: no login, basket, booking, order or payment. Give the user the link to finish on the site.
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `ASALBANOO_MCP_PROXY` to an HTTP proxy with an Iranian IP.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

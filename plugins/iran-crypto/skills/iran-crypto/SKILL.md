@@ -12,7 +12,7 @@ The tools below come from the `iran-crypto-mcp` MCP server. If they are not avai
 ## Tools
 
 - `ic_list_exchanges`: List the supported Iranian crypto exchanges, their native price unit and what each can answer.
-- `ic_list_markets`: List the coins an exchange trades against Toman (IRT) or USDT.
+- `ic_list_markets`: List the coins an exchange trades against Toman (IRT) or USDT, to check a symbol.
 - `ic_compare_price`: Compare one coin's price on every supported exchange in one call, cheapest first, with the spread.
 - `ic_get_ticker`: Get the live price, best bid and ask, 24h range, change and volume of one coin on one exchange.
 - `ic_get_orderbook`: Get the top bids and asks of one coin's order book on one exchange, with the spread.
@@ -31,3 +31,9 @@ The tools below come from the `iran-crypto-mcp` MCP server. If they are not avai
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `IRAN_CRYPTO_MCP_PROXY` to an HTTP proxy with an Iranian IP.
 - Public market data only: no keys, no trading. Every IRT price is already Toman and USDT markets are USDT. Check the order book before treating a spread between exchanges as an opportunity. Sites: Nobitex, Wallex, Bitpin, Ramzinex, Tabdeal, OMPFinex, Exir.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

@@ -11,12 +11,12 @@ The tools below come from the `qavanin-mcp` MCP server. If they are not availabl
 
 ## Tools
 
-- `qv_law`: Read the full text of a law, regulation, court vote or opinion as sections (articles, notes, headings).
-- `qv_law_info`: Metadata of a law: type, approving body, approval, notification and gazette dates and numbers, last status,
+- `qv_law`: Read the text of a law, regulation, court vote or opinion as sections (articles, notes, headings).
+- `qv_law_info`: Metadata of a law: type, approver, approval, notification and gazette data, status, executing bodies.
 - `qv_amendments`: Which laws amended this one, which this one amends, and which of its articles were amended.
 - `qv_article_history`: Every amendment of one article: type (اصلاحی...), date, the amending law and the replacing text.
-- `qv_related`: Documents related to a law: other laws, and regulations, court votes and legal opinions that cite or
-- `qv_search`: Search the Iranian law and regulation database (qavanin.ir, 168,000 documents) and list matching titles.
+- `qv_related`: Documents related to a law: other laws, and regulations, votes and opinions that cite it (newest first).
+- `qv_search`: Search the Iranian law and regulation database (qavanin.ir) and list matching titles.
 - `qv_lookup`: Find the ids that qv_search filters take: approving bodies, executing bodies, subjects, types, statuses, lists.
 
 ## Rules
@@ -26,3 +26,9 @@ The tools below come from the `qavanin-mcp` MCP server. If they are not availabl
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `QAVANIN_MCP_PROXY` to an HTTP proxy with an Iranian IP.
 - qavanin.ir is slow (1 to 15 s per call; a whole law can take 15 s). Prefer one good query over many.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

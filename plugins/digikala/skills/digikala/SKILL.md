@@ -27,11 +27,11 @@ The tools below come from the `digikala-mcp` MCP server. If they are not availab
 - `dk_price_history`: Get ~30 days of daily buy-box prices (Toman) per color/variant, with lowest and highest.
 - `dk_reviews`: Read customer reviews: stars 1-5 (null = none), text, pros/cons, verified buyer flag.
 - `dk_questions`: Read customers' questions (20 per page) with up to 2 answers each (answered_by: buyer, seller, ...).
-- `dk_similar`: List products similar to one (same kind, other models and brands).
+- `dk_similar`: List products similar to one (same kind, other models and brands); sort='cheapest' for cheaper ones.
 - `dk_compare`: Compare 2-4 products side by side: price and rating, then the spec rows where they differ.
 - `dk_shortlist`: Re-price up to 10 products in one call: price, cheapest offer, stock, rating and 30-day low (Toman).
 - `dk_installments`: Get the Digipay credit-line offers for a product, in Toman.
-- `dk_plus_plans`: List Digikala Plus plans (free shipments per month: jet = same-day Tehran/Karaj, fresh = supermarket) with price in Toman and benefits.
+- `dk_plus_plans`: List Digikala Plus plans (monthly free shipments; fresh = supermarket) with price in Toman and benefits.
 - `dk_gold_prices`: Get the live 18k gold price per gram and gold coin prices, in Toman.
 - `dk_location`: Turn an address into coordinates, or coordinates into an address with Digikala's city_id and state_id.
 
@@ -41,3 +41,9 @@ The tools below come from the `digikala-mcp` MCP server. If they are not availab
 - Read-only: no login, basket, booking, order or payment. Give the user the link to finish on the site.
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `DIGIKALA_MCP_PROXY` to an HTTP proxy with an Iranian IP.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

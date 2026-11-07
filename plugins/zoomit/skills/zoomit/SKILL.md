@@ -16,7 +16,7 @@ The tools below come from the `zoomit-mcp` MCP server. If they are not available
 - `zm_list`: List one category's products with the site's filters: brand, price, score, specs, stock, sort.
 - `zm_filters`: Show what zm_list can filter by in a category: price range, brand slugs, spec filters with values, buying guides.
 - `zm_product`: Get one product's full spec table, user score, Zoomit's pros and cons and its price range in Toman.
-- `zm_prices`: List a product's seller offers (cheapest first, Toman, with the shop's own listing title and link) and its price history.
+- `zm_prices`: List a product's seller offers (cheapest first, Toman, with listing title and link) and its price history.
 - `zm_compare`: Compare 2-4 products: price, scores and a spec table where each row lists the values in the order of `products`.
 - `zm_similar`: Suggest alternatives to a product: the ones people compare it with, others of its brand, or in its price range.
 - `zm_articles`: Search Zoomit's news and review articles (title, lead, date, link).
@@ -30,3 +30,9 @@ The tools below come from the `zoomit-mcp` MCP server. If they are not available
 - Read-only: no login, basket, booking, order or payment. Give the user the link to finish on the site.
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `ZOOMIT_MCP_PROXY` to an HTTP proxy with an Iranian IP.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

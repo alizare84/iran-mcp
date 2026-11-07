@@ -14,7 +14,7 @@ The tools below come from the `gamefa-mcp` MCP server. If they are not available
 - `gf_search_articles`: Search Gamefa's news, reviews and features by keyword, newest matches first.
 - `gf_latest_articles`: List the newest Gamefa articles, optionally for one section such as news, reviews, trailers or pc.
 - `gf_article`: Read one Gamefa article as plain text, with the editors' score box when it is a review.
-- `gf_reviews`: List Gamefa's game reviews (نقد و بررسی) newest first, each with the editors' score out of 10, label, pros and cons.
+- `gf_reviews`: List Gamefa's game reviews newest first, each with the editors' score out of 10, label, pros and cons.
 - `gf_popular`: List the most viewed Gamefa articles of the past week, month, season or year, most viewed first.
 - `gf_games`: Browse or search Gamefa's game profiles with the editors' score, user score, genres, platforms and release date.
 - `gf_upcoming_games`: List games that have not been released yet, soonest first (Gamefa's release calendar), with ISO release dates.
@@ -31,3 +31,9 @@ The tools below come from the `gamefa-mcp` MCP server. If they are not available
 - Read-only: no login, basket, booking, order or payment. Give the user the link to finish on the site.
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `GAMEFA_MCP_PROXY` to an HTTP proxy with an Iranian IP.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

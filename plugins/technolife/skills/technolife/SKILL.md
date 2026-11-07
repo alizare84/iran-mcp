@@ -28,7 +28,7 @@ The tools below come from the `technolife-mcp` MCP server. If they are not avail
 - `tl_price_basket`: Get the exact total for a set of seller items: discounts, insurance, quantity limits, cash vs installment price.
 - `tl_suggest`: Turn a product name into Technolife product codes (typeahead, up to 30 products, no prices).
 - `tl_search`: Search Technolife products with prices, discount, stock and rating.
-- `tl_find_cheapest`: Find the cheapest in-stock products for a search, one flat list sorted by the real price after discount.
+- `tl_find_cheapest`: Find the cheapest in-stock products for a search, one flat list sorted by the price after discount.
 - `tl_find_brand`: Look up a brand by its Persian name: filter code and brand page.
 
 ## Rules
@@ -37,3 +37,9 @@ The tools below come from the `technolife-mcp` MCP server. If they are not avail
 - Read-only: no login, basket, booking, order or payment. Give the user the link to finish on the site.
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `TECHNOLIFE_MCP_PROXY` to an HTTP proxy with an Iranian IP.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

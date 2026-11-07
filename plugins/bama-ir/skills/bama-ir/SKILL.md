@@ -11,7 +11,7 @@ The tools below come from the `bama-ir-mcp` MCP server. If they are not availabl
 
 ## Tools
 
-- `ba_search`: Search used and new car ads on Bama (bama.ir) with filters; returns up to 30 compact ads per page.
+- `ba_search`: Search used and new car ads on Bama (bama.ir) with filters; up to 30 compact ads per page.
 - `ba_ad`: Get one Bama ad (car, motorcycle or truck) in full: price, specs, condition, seller, description and photos.
 - `ba_market_stats`: Price statistics (min, quartiles, median, max, per year) for a car model from live Bama ads.
 - `ba_dealers`: List car dealers (showrooms) with ads for a model or city on Bama, with address, rating and how many ads match.
@@ -30,3 +30,9 @@ The tools below come from the `bama-ir-mcp` MCP server. If they are not availabl
 - Read-only: no login, basket, booking, order or payment. Give the user the link to finish on the site.
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `BAMA_MCP_PROXY` to an HTTP proxy with an Iranian IP.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

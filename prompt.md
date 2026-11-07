@@ -34,7 +34,7 @@
 - پراکسی اختیاری: <NAME>_MCP_PROXY
 - نسخه در pyproject.toml و server.json هر دو 0.1.0
 - لایسنس MIT
-- دسته را از همین‌ها انتخاب کن: food, shopping, beauty, fashion, classifieds, cars, travel, maps, health, books, learning, jobs, freelance, software, cloud, prices, stocks, economy, news, sports, entertainment, video, calendar, quakes, law, tax
+- دسته را از همین‌ها انتخاب کن: food, shopping, beauty, fashion, classifieds, cars, travel, maps, health, books, learning, jobs, freelance, software, cloud, prices, stocks, economy, news, sports, entertainment, video, calendar, quakes, law, tax, insurance, companies
 - دستهٔ تازه نساز مگر هیچ‌کدام معنی را نرساند. در آن صورت USE در scripts/catalog.py و GROUPS در scripts/banner.py را هم پر کن.
 
 ## شکل سرور

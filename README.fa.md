@@ -2,7 +2,7 @@
 
 # iran-mcp
 
-۷۲ سرور MCP فقط‌خواندنی و ۸۹۶ ابزار برای سایت‌های عمومی ایرانی. قیمت‌ها به تومان است. هر ابزار با یک خط توضیح در [TOOLS.md](TOOLS.md) است.
+۷۷ سرور MCP فقط‌خواندنی و ۹۹۴ ابزار برای سایت‌های عمومی ایرانی. قیمت‌ها به تومان است. هر ابزار با یک خط توضیح در [TOOLS.md](TOOLS.md) است.
 
 این درخت، [sepehr071/iran-mcp](https://github.com/sepehr071/iran-mcp) را دنبال می‌کند. سایت تازه با پول‌ریکوئست به همین ریپو اضافه می‌شود.
 
@@ -24,6 +24,7 @@
 | [emalls-ir-mcp](https://github.com/sepehr071/emalls-ir-mcp) | [ایمالز](https://emalls.ir) (مقایسهٔ قیمت) | ۱۰ | کالا در فروشگاه‌های ایرانی، پیشنهاد هر فروشگاه، تاریخچهٔ قیمت، فروشگاه‌ها |
 | [mobile-ir-mcp](https://github.com/sepehr071/mobile-ir-mcp) | [موبایل‌دات‌آی‌آر](https://www.mobile.ir) | ۱۷ | مشخصات گوشی، قیمت فروشگاه‌ها، تاریخچهٔ قیمت، گوشی دست‌دوم، سیم‌کارت |
 | [zoomit-mcp](https://github.com/sepehr071/zoomit-mcp) | [زومیت](https://www.zoomit.ir/product) (زوبین) | ۱۲ | مشخصات گوشی، لپ‌تاپ و کارت گرافیک، قیمت فروشگاه‌ها، تاریخچهٔ قیمت، مقایسه، نقد و بررسی |
+| [snappshop-mcp](https://github.com/sepehr071/snappshop-mcp) | [اسنپ‌شاپ](https://snappshop.ir) | ۱۳ | جست‌وجوی بازار اسنپ‌شاپ، دسته‌ها، پیشنهاد همهٔ فروشنده‌ها به تومان، نظرها، حراج |
 
 ### 🏠 نیازمندی‌ها
 
@@ -108,6 +109,7 @@
 | [jobvision-mcp](https://github.com/sepehr071/jobvision-mcp) | [جاب‌ویژن](https://jobvision.ir) | ۱۴ | جست‌وجوی شغل، حقوق اعلام‌شده، شرکت‌ها، تجربهٔ مصاحبه، بازار کار |
 | [irantalent-mcp](https://github.com/sepehr071/irantalent-mcp) | [ایران‌تلنت](https://www.irantalent.com) | ۱۱ | جست‌وجوی شغل، شرکت‌ها، نظر کارکنان، گزارش حقوق |
 | [quera-mcp](https://github.com/sepehr071/quera-mcp) | [کوئرا](https://quera.org) | ۱۴ | شغل‌های فنی، شرکت‌ها، حقوق، مسابقه، سؤال‌های برنامه‌نویسی، دوره و بوت‌کمپ |
+| [iran-jobs-mcp](https://github.com/sepehr071/iran-jobs-mcp) | [ایران‌تلنت](https://www.irantalent.com)، [جابینجا](https://jobinja.ir)، [جاب‌ویژن](https://jobvision.ir) | ۳۷ | آگهی شغلی، شرکت‌ها، نظرها، تجربهٔ مصاحبه و حقوق در سه سایت کاریابی کنار هم |
 | [ponisha-mcp](https://github.com/sepehr071/ponisha-mcp) | [پونیشا](https://ponisha.ir) | ۱۴ | پروژه‌های فریلنسری و پیشنهادها، فریلنسرها، خدمات، تقاضای مهارت‌ها |
 | [karlancer-mcp](https://github.com/sepehr071/karlancer-mcp) | [کارلنسر](https://www.karlancer.com) | ۱۴ | پروژه‌های فریلنسری، فریلنسرها، خدمات، نرخ بازار، مهارت‌های پرطرفدار |
 
@@ -120,6 +122,7 @@
 | [ifb-mcp](https://github.com/sepehr071/ifb-mcp) | [فرابورس](https://www.ifb.ir) | ۱۶ | بازده اوراق و صکوک، اسناد خزانه، منحنی بازده، عرضهٔ اولیه، اطلاعیه‌ها، آمار بازار (ریال) |
 | [fipiran-mcp](https://github.com/sepehr071/fipiran-mcp) | [فیپیران](https://fipiran.ir) | ۱۱ | صندوق‌های سرمایه‌گذاری و ETF: ارزش هر واحد، بازده، اندازه، مدیر، مقایسهٔ صندوق‌ها |
 | [ime-mcp](https://github.com/sepehr071/ime-mcp) | [بورس کالا](https://www.ime.co.ir) | ۱۴ | معاملات بورس کالا، عرضه‌ها، تاریخچهٔ قیمت، جمع بازار، اختیار معامله، گواهی سپرده (ریال) |
+| [iran-brokers-mcp](https://github.com/sepehr071/iran-brokers-mcp) | [کارگزاری مفید](https://www.emofid.com)، [کارگزاری آگاه](https://agah.com) | ۲۲ | سهام، صندوق‌ها، اختیار معامله، اوراق و صکوک، طلا و سکه، دیده‌بان، اطلاعیه‌های کدال از دو کارگزاری (ریال) |
 | [cbi-mcp](https://github.com/sepehr071/cbi-mcp) | [بانک مرکزی](https://www.cbi.ir) | ۱۱ | نرخ رسمی ارز و تاریخچهٔ آن، تورم، نرخ‌های سیاستی، نقدینگی، حراج اوراق، خبرها (ریال) |
 | [amar-mcp](https://github.com/sepehr071/amar-mcp) | [مرکز آمار ایران](https://amar.org.ir) | ۱۲ | تورم، بیکاری، جمعیت، تولید ناخالص داخلی، شاخص قیمت تولیدکننده، جدول‌ها و تقویم انتشار |
 
@@ -135,6 +138,8 @@
 | [iran-quake-mcp](https://github.com/sepehr071/iran-quake-mcp) | [مرکز لرزه‌نگاری](https://irsc.ut.ac.ir)، [USGS](https://earthquake.usgs.gov) و [EMSC](https://www.emsc-csem.org) | ۵ | تازه‌ترین و قوی‌ترین زلزله‌های ایران، جست‌وجوی سوابق، جزئیات رویداد، آمار لرزه‌خیزی |
 | [qavanin-mcp](https://github.com/sepehr071/qavanin-mcp) | [سامانهٔ قوانین](https://qavanin.ir) | ۷ | ۱۶۸ هزار قانون، مقرره و رأی: جست‌وجو، متن کامل، یک ماده، اصلاحات، اسناد مرتبط |
 | [iran-tax-mcp](https://github.com/sepehr071/iran-tax-mcp) | [سازمان امور مالیاتی](https://tax.gov.ir)، [سامانهٔ شناسه کالا](https://stuffid.tax.gov.ir)، [پایگاه قوانین مالیاتی](https://regulation.tax.gov.ir) | ۶ | شناسهٔ کالا و خدمت با نرخ ارزش افزوده، کد فعالیت، ارزش معاملاتی املاک، قوانین و بخشنامه‌های مالیاتی، پرسش‌های متداول |
+| [iran-insurance-mcp](https://github.com/sepehr071/iran-insurance-mcp) | [بیمه‌بازار](https://bimebazar.com)، [ازکی](https://www.azki.com) | ۱۸ | بیمه‌گرها و رتبه‌شان، استعلام بیمهٔ مسافرتی، شخص ثالث، بدنه، موتور، آتش‌سوزی و درمان کنار هم |
+| [rasmio-mcp](https://github.com/sepehr071/rasmio-mcp) | [رسمیو](https://rasmio.com) | ۸ | شرکت‌های ایرانی، اعضای هیئت‌مدیره، آگهی‌های روزنامهٔ رسمی، محصولات، برندها، علامت تجاری و اختراع (ریال) |
 | [varzesh3-mcp](https://github.com/sepehr071/varzesh3-mcp) | [ورزش۳](https://www.varzesh3.com) | ۱۸ | نتایج زنده، جدول لیگ، برنامهٔ بازی‌ها، تیم‌ها، بازیکنان، گلزنان، نقل‌وانتقالات، پخش تلویزیونی، خبر |
 | [gamefa-mcp](https://github.com/sepehr071/gamefa-mcp) | [گیمفا](https://gamefa.com) | ۱۳ | خبر بازی و فیلم، نقد با امتیاز، معرفی بازی و فیلم، بازی‌های در راه |
 | [iran-vod-mcp](https://github.com/sepehr071/iran-vod-mcp) | [فیلیمو](https://www.filimo.com) و [نماوا](https://www.namava.ir) | ۱۳ | فیلم و سریال در فیلیمو و نماوا: جست‌وجو، کجا ببینیم، جزئیات، قسمت‌ها، تازه‌ها، مجموعه‌ها، اشتراک‌ها |

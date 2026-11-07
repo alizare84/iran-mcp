@@ -12,7 +12,7 @@ The tools below come from the `hamrah-mechanic-mcp` MCP server. If they are not 
 ## Tools
 
 - `hm_brands`: List the car brands Hamrah Mechanic knows, with the slug the other tools take.
-- `hm_models`: List the models of one brand with their slugs and trims (types).
+- `hm_models`: List the models of one brand with their slugs.
 - `hm_prices`: Get today's market (used and zero-km) prices of cars from Hamrah Mechanic's daily price list.
 - `hm_price_estimate`: Get the market price range and recent monthly change for one trim in one model year.
 - `hm_search_cars`: Search the used and zero-km cars Hamrah Mechanic's showrooms sell, with filters.
@@ -30,3 +30,9 @@ The tools below come from the `hamrah-mechanic-mcp` MCP server. If they are not 
 - Read-only: no login, basket, booking, order or payment. Give the user the link to finish on the site.
 - Keep request rates low. These are undocumented site APIs that can change or rate-limit.
 - On timeouts or HTTP 403 outside Iran, set `HAMRAH_MECHANIC_MCP_PROXY` to an HTTP proxy with an Iranian IP.
+
+## Maintainer
+
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web" width="100%"></a>
+
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد): [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) · [GitHub](https://github.com/sepehr071). More servers for Iranian websites: [iran-mcp](https://github.com/sepehr071/iran-mcp).

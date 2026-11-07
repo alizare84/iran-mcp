@@ -1,17 +1,17 @@
 # iran-mcp
 
-> 72 MCP servers (896 tools) that let AI agents search and compare Iranian websites: Digikala, Torob, Basalam, Technolife, MasterKala, Baneh, Shopino, Banimode, Divar, Khanoumi, Asal Banoo, Snappfood, Okala, Tapsi Food, MrBilit, Flytoday, Jabama, Otaghak, Paziresh24, Doctoreto, Taaghche, Fidibo, 30book, Maktabkhooneh courses, Cafe Bazaar and Myket apps, Soft98-style download listings (metadata only), TGJU prices, Iranian crypto exchange prices, Milli.gold gold prices, Tehran Stock Exchange data, ten news sites, Iranian earthquakes, the qavanin.ir laws database the tax administration's public services, Emalls, Mobile.ir and Zoomit prices, Sheypoor ads, Bama, Karnameh and Hamrah Mechanic car prices, Alibaba and Eghamat24 travel, Neshan and Balad maps, Darukade pharmacy, Iranketab books, Faradars courses, Jobinja, Jobvision, IranTalent, Quera, Ponisha and Karlancer jobs and freelance work, Codal filings, Fara Bourse bonds, Fipiran funds, the Iran Mercantile Exchange, Central Bank and Statistical Centre data, Varzesh3 sports, Gamefa, the Time.ir calendar, the Official Gazette and Iranian cloud status, plus PayPing and Bale for the user's own accounts, all unofficial and open source; ExirYab's official server for its doctor directory; Pasavard's official hosted server for hourly-tracked Digikala and Snappshop prices (no sign-in, affiliate links); and SwapWallet's official hosted server for the user's own crypto wallet, where swaps, transfers and withdrawals need the user's approval in Telegram. Prices in Toman. Site servers are read-only. Run any package server with `uvx <name>-mcp`; add Pasavard (`https://pasavard.ir/api/mcp`) and SwapWallet (`https://swapwallet.app/mcp`, OAuth sign-in) by URL. Also a Claude Code plugin marketplace (`iran-mcp`): `claude plugin install <name> --marketplace sepehr071/iran-mcp`, one plugin per server (MCP server + skill) plus bundles such as `iran-all`. Skills for other agents: `npx skills add sepehr071/iran-mcp`.
+> 77 MCP servers (994 tools) that let AI agents search and compare Iranian websites: Digikala, Torob, Basalam, Technolife, MasterKala, Baneh, Shopino, Banimode, Divar, Khanoumi, Asal Banoo, Snappfood, Okala, Tapsi Food, MrBilit, Flytoday, Jabama, Otaghak, Paziresh24, Doctoreto, Taaghche, Fidibo, 30book, Maktabkhooneh courses, Snapp! Shop, Cafe Bazaar and Myket apps, Soft98-style download listings (metadata only), TGJU prices, Iranian crypto exchange prices, Milli.gold gold prices, Tehran Stock Exchange data, ten news sites, Iranian earthquakes, the qavanin.ir laws database the tax administration's public services, Emalls, Mobile.ir and Zoomit prices, Sheypoor ads, Bama, Karnameh and Hamrah Mechanic car prices, Alibaba and Eghamat24 travel, Neshan and Balad maps, Darukade pharmacy, Iranketab books, Faradars courses, Jobinja, Jobvision, IranTalent, Quera (plus iran-jobs-mcp for three job sites side by side), Ponisha and Karlancer jobs and freelance work, Codal filings, Mofid and Agah broker data, BimeBazar and Azki insurance quotes, the Rasmio company registry, Fara Bourse bonds, Fipiran funds, the Iran Mercantile Exchange, Central Bank and Statistical Centre data, Varzesh3 sports, Gamefa, the Time.ir calendar, the Official Gazette and Iranian cloud status, plus PayPing and Bale for the user's own accounts, all unofficial and open source; ExirYab's official server for its doctor directory; Pasavard's official hosted server for hourly-tracked Digikala and Snappshop prices (no sign-in, affiliate links); and SwapWallet's official hosted server for the user's own crypto wallet, where swaps, transfers and withdrawals need the user's approval in Telegram. Prices in Toman. Site servers are read-only. Run any package server with `uvx <name>-mcp`; add Pasavard (`https://pasavard.ir/api/mcp`) and SwapWallet (`https://swapwallet.app/mcp`, OAuth sign-in) by URL. Also a Claude Code plugin marketplace (`iran-mcp`): `claude plugin install <name> --marketplace sepehr071/iran-mcp`, one plugin per server (MCP server + skill) plus bundles such as `iran-all`. Skills for other agents: `npx skills add sepehr071/iran-mcp`.
 
 ## Docs
 
-- [AGENTS.md](https://raw.githubusercontent.com/sepehr071/iran-mcp/main/AGENTS.md): which server for which task, rules, install
-- [TOOLS.md](https://raw.githubusercontent.com/sepehr071/iran-mcp/main/TOOLS.md): every tool with a one-line summary
-- [servers.json](https://raw.githubusercontent.com/sepehr071/iran-mcp/main/servers.json): machine-readable catalog (package, version, env vars, tools)
-- [.mcp.json](https://raw.githubusercontent.com/sepehr071/iran-mcp/main/.mcp.json): config for all servers
-- [marketplace.json](https://raw.githubusercontent.com/sepehr071/iran-mcp/main/.claude-plugin/marketplace.json): Claude Code plugin marketplace, one plugin per server plus bundles
-- [PLUGINS.md](https://raw.githubusercontent.com/sepehr071/iran-mcp/main/PLUGINS.md): plugins and skills, agent compatibility, update flow
-- [README.md](https://raw.githubusercontent.com/sepehr071/iran-mcp/main/README.md): overview (English)
-- [README.fa.md](https://raw.githubusercontent.com/sepehr071/iran-mcp/main/README.fa.md): overview (Persian)
+- [AGENTS.md](https://raw.githubusercontent.com/alizare84/iran-mcp/main/AGENTS.md): which server for which task, rules, install
+- [TOOLS.md](https://raw.githubusercontent.com/alizare84/iran-mcp/main/TOOLS.md): every tool with a one-line summary
+- [servers.json](https://raw.githubusercontent.com/alizare84/iran-mcp/main/servers.json): machine-readable catalog (package, version, env vars, tools)
+- [.mcp.json](https://raw.githubusercontent.com/alizare84/iran-mcp/main/.mcp.json): config for all servers
+- [marketplace.json](https://raw.githubusercontent.com/alizare84/iran-mcp/main/.claude-plugin/marketplace.json): Claude Code plugin marketplace, one plugin per server plus bundles
+- [PLUGINS.md](https://raw.githubusercontent.com/alizare84/iran-mcp/main/PLUGINS.md): plugins and skills, agent compatibility, update flow
+- [README.md](https://raw.githubusercontent.com/alizare84/iran-mcp/main/README.md): overview (English)
+- [README.fa.md](https://raw.githubusercontent.com/alizare84/iran-mcp/main/README.fa.md): overview (Persian)
 - [prompt.md](prompt.md): paste into an agent with only a site name; it builds a read-only MCP server and opens a pull request to alizare84/iran-mcp
 - [format.md](format.md): the server contract that prompt follows
 
@@ -53,9 +53,12 @@
 - [iran-quake-mcp](https://github.com/sepehr071/iran-quake-mcp): earthquakes in Iran from USGS, EMSC and IRSC: latest, strongest, history, stats
 - [qavanin-mcp](https://github.com/sepehr071/qavanin-mcp): qavanin.ir national laws database: search, full text, articles, amendments
 - [iran-tax-mcp](https://github.com/sepehr071/iran-tax-mcp): tax administration public services (tax.gov.ir, stuffid.tax.gov.ir, regulation.tax.gov.ir): e-invoice goods IDs and VAT, activity codes, property values, tax laws and circulars
+- [iran-insurance-mcp](https://github.com/sepehr071/iran-insurance-mcp): BimeBazar and Azki insurance quotes and insurer ratings
+- [rasmio-mcp](https://github.com/sepehr071/rasmio-mcp): Rasmio company registry: companies, board members, Official Gazette ads, brands and trademarks
 - [emalls-ir-mcp](https://github.com/sepehr071/emalls-ir-mcp): Emalls price comparison: products, every shop's offer, price history
 - [mobile-ir-mcp](https://github.com/sepehr071/mobile-ir-mcp): Mobile.ir phone specs, shop prices, price history, used phones, SIM numbers
 - [zoomit-mcp](https://github.com/sepehr071/zoomit-mcp): Zoomit products (Zoobin): phone, laptop and GPU specs, shop prices, price history
+- [snappshop-mcp](https://github.com/sepehr071/snappshop-mcp): Snapp! Shop marketplace: search, every seller's offer in Toman, reviews, flash sales
 - [sheypoor-mcp](https://github.com/sepehr071/sheypoor-mcp): Sheypoor classified ads, ad details, price summaries for cars and homes
 - [bama-ir-mcp](https://github.com/sepehr071/bama-ir-mcp): Bama car ads, market prices, new-car price lists
 - [karnameh-mcp](https://github.com/sepehr071/karnameh-mcp): Karnameh used-car ads, specs, new-car market prices and price history
@@ -71,6 +74,7 @@
 - [jobvision-mcp](https://github.com/sepehr071/jobvision-mcp): Jobvision job ads, companies, advertised pay, interview reports
 - [irantalent-mcp](https://github.com/sepehr071/irantalent-mcp): IranTalent job ads, companies, employee reviews, salary reports
 - [quera-mcp](https://github.com/sepehr071/quera-mcp): Quera tech jobs, companies, contests, problems, courses
+- [iran-jobs-mcp](https://github.com/sepehr071/iran-jobs-mcp): IranTalent, Jobinja and Jobvision side by side: job ads, companies, reviews, interview reports and pay
 - [ponisha-mcp](https://github.com/sepehr071/ponisha-mcp): Ponisha freelance projects, bids, freelancers, skill demand
 - [karlancer-mcp](https://github.com/sepehr071/karlancer-mcp): Karlancer freelance projects, freelancers, services
 - [iran-cloud-status-mcp](https://github.com/sepehr071/iran-cloud-status-mcp): status, incidents, maintenance and prices of ArvanCloud, Hamravesh, Chabokan and Liara
@@ -78,6 +82,7 @@
 - [ifb-mcp](https://github.com/sepehr071/ifb-mcp): Iran Fara Bourse bond and sukuk yields, treasury bills, IPOs, announcements (Rial)
 - [fipiran-mcp](https://github.com/sepehr071/fipiran-mcp): Fipiran mutual funds and ETFs: NAV, returns, size, managers
 - [ime-mcp](https://github.com/sepehr071/ime-mcp): Iran Mercantile Exchange trades, supply offers, prices, market totals (Rial)
+- [iran-brokers-mcp](https://github.com/sepehr071/iran-brokers-mcp): Mofid and Agah broker data: stocks, ETFs, options, bonds, gold and screeners (Rial)
 - [cbi-mcp](https://github.com/sepehr071/cbi-mcp): Central Bank of Iran official exchange rates, inflation, policy rates, news (Rial)
 - [amar-mcp](https://github.com/sepehr071/amar-mcp): Statistical Centre of Iran: CPI inflation, unemployment, population, GDP
 - [varzesh3-mcp](https://github.com/sepehr071/varzesh3-mcp): Varzesh3 live scores, league tables, fixtures, teams, transfers, news
