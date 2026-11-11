@@ -2,7 +2,7 @@
 
 # iran-mcp
 
-77 read-only MCP servers and 994 tools for public Iranian websites. Prices are in Toman. Every tool, one line each, is in [TOOLS.md](TOOLS.md).
+78 read-only MCP servers and 1034 tools for public Iranian websites. Prices are in Toman. Every tool, one line each, is in [TOOLS.md](TOOLS.md).
 
 This tree tracks [sepehr071/iran-mcp](https://github.com/sepehr071/iran-mcp). New sites are added here by pull request.
 
@@ -123,6 +123,7 @@ This tree tracks [sepehr071/iran-mcp](https://github.com/sepehr071/iran-mcp). Ne
 | [fipiran-mcp](https://github.com/sepehr071/fipiran-mcp) | [Fipiran](https://fipiran.ir) | 11 | Mutual funds and ETFs: NAV, returns, size, managers, fund comparison |
 | [ime-mcp](https://github.com/sepehr071/ime-mcp) | [Iran Mercantile Exchange](https://www.ime.co.ir) | 14 | Commodity trades, supply offers, price history, market totals, options, deposit certificates (Rial) |
 | [iran-brokers-mcp](https://github.com/sepehr071/iran-brokers-mcp) | [Mofid](https://www.emofid.com), [Agah](https://agah.com) | 22 | Stocks, ETFs and funds, options, bonds and sukuk, gold and coin, screeners, Codal news, through two brokers (Rial) |
+| [iran-bourse-mcp](https://github.com/msmahdinejad/iran-bourse-mcp) | [TSETMC](https://tsetmc.com), [Codal](https://codal.ir), [IME](https://www.ime.co.ir), [IRENEX](https://www.iee.ir) | 40 | Screener, quotes, order book, ticks, real/legal flow, options, futures, shareholders, Codal filings, commodity and energy markets (Rial) |
 | [cbi-mcp](https://github.com/sepehr071/cbi-mcp) | [Central Bank of Iran](https://www.cbi.ir) | 11 | Official exchange rates and their history, inflation, policy rates, liquidity, bond auctions, news (Rial) |
 | [amar-mcp](https://github.com/sepehr071/amar-mcp) | [Statistical Centre of Iran](https://amar.org.ir) | 12 | CPI inflation, unemployment, population, GDP, producer prices, release tables and calendar |
 

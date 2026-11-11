@@ -1,6 +1,6 @@
 {
   "name": "iran-all",
-  "description": "All 74 Iranian site servers that need no setup, in one install.",
+  "description": "All 75 Iranian site servers that need no setup, in one install.",
   "author": {
     "name": "Sepehr Radmard",
     "email": "sepehrr80@gmail.com",
@@ -68,6 +68,7 @@
     "fipiran",
     "ime",
     "iran-brokers",
+    "iran-bourse",
     "cbi",
     "amar",
     "iran-news",

@@ -368,6 +368,12 @@
       "category": "stocks"
     },
     {
+      "name": "iran-bourse",
+      "source": "./plugins/iran-bourse",
+      "description": "Unofficial read-only Tehran Stock Exchange, Fara Bourse, Codal, the mercantile exchange and the energy exchange: screener, quotes, order book, shareholders and filings.",
+      "category": "stocks"
+    },
+    {
       "name": "cbi",
       "source": "./plugins/cbi",
       "description": "Read-only Central Bank of Iran (cbi.ir): official FX rates, inflation, policy rates, news.",
@@ -472,7 +478,7 @@
     {
       "name": "iran-all",
       "source": "./plugins/iran-all",
-      "description": "All 74 Iranian site servers that need no setup, in one install.",
+      "description": "All 75 Iranian site servers that need no setup, in one install.",
       "category": "bundle"
     },
     {
@@ -568,7 +574,7 @@
     {
       "name": "iran-stocks",
       "source": "./plugins/iran-stocks",
-      "description": "Everything for stock exchange quotes, company filings, funds, bonds or commodity exchange trades in Iran: TSETMC Tehran Stock Exchange, Codal (کدال) Disclosures, Iran Fara Bourse, Fipiran Funds, Iran Mercantile Exchange, Iran Brokers Market Data.",
+      "description": "Everything for stock exchange quotes, company filings, funds, bonds or commodity exchange trades in Iran: TSETMC Tehran Stock Exchange, Codal (کدال) Disclosures, Iran Fara Bourse, Fipiran Funds, Iran Mercantile Exchange, Iran Brokers Market Data, Iran Bourse.",
       "category": "bundle"
     },
     {

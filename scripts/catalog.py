@@ -122,6 +122,29 @@ NOTES = {
     "user needs IRAN_JOBS_MCP_PROXY.",
     "rasmio-mcp": "Money is Rial, not Toman. Dates are Jalali.",
     "snappshop-mcp": "Snapp! Shop answers only Iranian connections (HTTP 403 elsewhere).",
+    "iran-bourse-mcp": "Prices are Rial (divide by 10 for Toman), not Toman. Dates accept Gregorian or Jalali. "
+    "TSETMC, Codal, the Iran Mercantile Exchange and the Iran Energy Exchange answer Iranian IPs; outside Iran set "
+    "IRAN_BOURSE_PROXY. Sites: tsetmc.com, codal.ir, ime.co.ir, iee.ir.",
+}
+
+# Third-party packages that ship no MCP Registry server.json. Tools come from src; the version from __version__.
+# Env vars here are the ones the package actually reads.
+UNREGISTERED = {
+    "iran-bourse-mcp": {
+        "title": "Iran Bourse",
+        "description": "Unofficial read-only Tehran Stock Exchange, Fara Bourse, Codal, the mercantile exchange and the energy exchange: screener, quotes, order book, shareholders and filings.",
+        "pypi": "iran-bourse-mcp",
+        "repository": "https://github.com/msmahdinejad/iran-bourse-mcp",
+        "registry_name": "io.github.msmahdinejad/iran-bourse-mcp",
+        "env": [
+            {
+                "name": "IRAN_BOURSE_PROXY",
+                "isRequired": False,
+                "isSecret": False,
+                "description": "Optional HTTP proxy URL. TSETMC, Codal, IME and the energy exchange answer Iranian IPs.",
+            }
+        ],
+    },
 }
 
 # name -> (category, site url); order here is the order everywhere else
@@ -186,6 +209,7 @@ SERVERS = {
     "fipiran-mcp": ("stocks", "https://fipiran.ir"),
     "ime-mcp": ("stocks", "https://www.ime.co.ir"),
     "iran-brokers-mcp": ("stocks", "https://www.emofid.com"),
+    "iran-bourse-mcp": ("stocks", "https://tsetmc.com"),
     "cbi-mcp": ("economy", "https://www.cbi.ir"),
     "amar-mcp": ("economy", "https://amar.org.ir"),
     "iran-news-mcp": ("news", "https://www.mehrnews.com"),
@@ -213,24 +237,75 @@ REMOTE = {
 
 
 def tools(src: pathlib.Path) -> list[dict]:
-    """Every function decorated with @tool("Title") under src, in file order."""
+    """Every function decorated with @tool("Title") or @tool() under src, in file order."""
     out = []
     for path in sorted(src.rglob("*.py")):
         for node in ast.parse(path.read_text(encoding="utf-8")).body:
             if not isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
                 continue
             for dec in node.decorator_list:
-                if isinstance(dec, ast.Call) and getattr(dec.func, "id", None) == "tool" and dec.args:
+                if isinstance(dec, ast.Call) and getattr(dec.func, "id", None) == "tool" and (dec.args or not dec.keywords):
                     # first sentence of the first paragraph: a wrapped first line no longer cuts mid-sentence
                     para = " ".join((ast.get_docstring(node) or "").strip().split("\n\n")[0].split())
                     doc = re.split(r"(?<=[.?!])\s+(?=[A-Z`(])", para, maxsplit=1)[0]
                     kw = {k.arg: k.value for k in dec.keywords}
                     # @tool("Title", read_only=False) marks a tool that changes something (login, cart, booking, ...)
                     read_only = ast.literal_eval(kw["read_only"]) if "read_only" in kw else True
-                    out.append(
-                        {"name": node.name, "title": ast.literal_eval(dec.args[0]), "summary": doc, "read_only": read_only}
-                    )
+                    title = ast.literal_eval(dec.args[0]) if dec.args else node.name.replace("_", " ").capitalize()
+                    out.append({"name": node.name, "title": title, "summary": doc, "read_only": read_only})
     return out
+
+
+def package_version(repo: pathlib.Path) -> str:
+    """__version__ of a package that has no server.json."""
+    for path in sorted((repo / "src").rglob("__init__.py")):
+        match = re.search(r"""__version__\s*=\s*['"]([^'"]+)['"]""", path.read_text(encoding="utf-8"))
+        if match:
+            return match.group(1)
+    raise SystemExit(f"{repo.name}: no server.json and no __version__")
+
+
+def describe(name: str, category: str, site: str) -> tuple[dict, dict]:
+    """One package server's catalog record and its .mcp.json entry."""
+    repo = ROOT / "servers" / name
+    found = tools(repo / "src")
+    if (repo / "server.json").exists():
+        meta = json.loads((repo / "server.json").read_text(encoding="utf-8"))
+        pkg = meta["packages"][0]
+        env = [
+            {k: v[k] for k in ("name", "isRequired", "isSecret", "description")}
+            for v in pkg.get("environmentVariables", [])
+        ]
+        title, description = meta["title"], meta["description"]
+        version, pypi = meta["version"], pkg["identifier"]
+        repository, registry_name = meta["repository"]["url"], meta["name"]
+    else:
+        spec = UNREGISTERED[name]
+        env = spec["env"]
+        title, description = spec["title"], spec["description"]
+        version, pypi = package_version(repo), spec["pypi"]
+        repository, registry_name = spec["repository"], spec["registry_name"]
+    record = {
+        "name": name,
+        "title": title,
+        "category": category,
+        "site": site,
+        "description": description,
+        "version": version,
+        "pypi": pypi,
+        "repository": repository,
+        "registry_name": registry_name,
+        "run": f"uvx {pypi}",
+        "read_only": not any(e["isRequired"] for e in env) and all(t["read_only"] for t in found),
+        "env": env,
+        "tool_count": len(found),
+        "tools": found,
+    }
+    entry = {"command": "uvx", "args": [pypi]}
+    required = [e["name"] for e in env if e["isRequired"]]
+    if required:
+        entry["env"] = {e: "${" + e + ":-}" for e in required}
+    return record, entry
 
 
 def card(url: str) -> dict:
@@ -244,36 +319,8 @@ def main() -> None:
     catalog, mcp, md = [], {}, ["# Tool index", "", "Generated by `scripts/catalog.py`. Do not edit by hand.", ""]
     previous = {s["name"]: s for s in json.loads((ROOT / "servers.json").read_text(encoding="utf-8"))}
     for name, (category, site) in SERVERS.items():
-        repo = ROOT / "servers" / name
-        meta = json.loads((repo / "server.json").read_text(encoding="utf-8"))
-        pkg = meta["packages"][0]
-        env = [
-            {k: v[k] for k in ("name", "isRequired", "isSecret", "description")}
-            for v in pkg.get("environmentVariables", [])
-        ]
-        found = tools(repo / "src")
-        catalog.append(
-            {
-                "name": name,
-                "title": meta["title"],
-                "category": category,
-                "site": site,
-                "description": meta["description"],
-                "version": meta["version"],
-                "pypi": pkg["identifier"],
-                "repository": meta["repository"]["url"],
-                "registry_name": meta["name"],
-                "run": f"uvx {pkg['identifier']}",
-                "read_only": not any(e["isRequired"] for e in env) and all(t["read_only"] for t in found),
-                "env": env,
-                "tool_count": len(found),
-                "tools": found,
-            }
-        )
-        entry = {"command": "uvx", "args": [pkg["identifier"]]}
-        required = [e["name"] for e in env if e["isRequired"]]
-        if required:
-            entry["env"] = {e: "${" + e + ":-}" for e in required}
+        record, entry = describe(name, category, site)
+        catalog.append(record)
         mcp[name.removesuffix("-mcp")] = entry
 
     for name, (category, site) in REMOTE.items():

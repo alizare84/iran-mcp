@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Guide for AI agents using or working on **iran-mcp**: 77 MCP servers for Iranian websites, 994 tools in
+Guide for AI agents using or working on **iran-mcp**: 78 MCP servers for Iranian websites, 1034 tools in
 total. 68 are Python packages on PyPI, run as stdio servers with `uvx <package>`; all of them are unofficial except
 `exiryab-mcp`, ExirYab's own server on its public API. Two are hosted by their sites:
 `pasavard-mcp` (`https://pasavard.ir/api/mcp`, no sign-in) and `swapwallet-mcp` (`https://swapwallet.app/mcp`, OAuth
@@ -58,6 +58,7 @@ sign-in).
 | Tehran Stock Exchange and Fara Bourse quotes, top movers, order book, indices, real versus legal trading | `tsetmc-mcp` | `ts_search_symbols`, then `ts_get_quote`, `ts_market_movers`, `ts_indices` |
 | A listed company's filings: financial statements, EPS, monthly activity reports | `codal-mcp` | `cd_search_letters`, then `cd_letter` |
 | Stocks, ETFs, options, bonds, gold and screeners through brokers Mofid and Agah | `iran-brokers-mcp` | `br_search`, then `br_stock`, `br_history`; `br_market`, `br_screener` |
+| Tehran market screener, quotes, order book, options, Codal filings, commodity and energy markets | `iran-bourse-mcp` | `search_symbol`, then `symbol_overview`; `screen_stocks`, `market_watch` |
 | Bond, sukuk and treasury-bill yields, IPOs, Fara Bourse announcements | `ifb-mcp` | `ifb_yields`, `ifb_yield_curve`, `ifb_ipos` |
 | Mutual funds and ETFs: NAV, returns, size | `fipiran-mcp` | `fp_search_funds`, `fp_fund`, `fp_compare` |
 | Iran Mercantile Exchange trades, supply offers, commodity prices | `ime-mcp` | `ime_trades`, `ime_supply`, `ime_price_history` |
@@ -160,7 +161,7 @@ README.md / README.fa.md   English (default) and Persian docs; keep both in sync
   ships its own `skills/<key>/SKILL.md`, which come from that file. Check with `claude plugin validate .`.
 - Add a server: `git submodule add https://github.com/sepehr071/<name>-mcp servers/<name>-mcp`, add it to
   `SERVERS` in `scripts/catalog.py` (and to `GROUPS` in `scripts/banner.py` if its category is new), run both scripts, add a row to both
-  READMEs and the table above. Update the 77 / 994 counts written in both READMEs.
+  READMEs and the table above. Update the 78 / 1034 counts written in both READMEs.
 - Add a hosted server: `git submodule add <its repo> servers/<name>-mcp` and an entry in `REMOTE` in
   `scripts/catalog.py`, then the same `GROUPS`, README, table and count steps. Its repo needs an MCP Registry
   `server.json` with `remotes` (name, version, description, repository), and the server must publish a server card

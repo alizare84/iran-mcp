@@ -1,0 +1,27 @@
+{
+  "name": "iran-bourse",
+  "displayName": "Iran Bourse",
+  "version": "0.4.0",
+  "description": "Unofficial read-only Tehran Stock Exchange, Fara Bourse, Codal, the mercantile exchange and the energy exchange: screener, quotes, order book, shareholders and filings.",
+  "author": {
+    "name": "Sepehr Radmard",
+    "email": "sepehrr80@gmail.com",
+    "url": "https://github.com/sepehr071"
+  },
+  "homepage": "https://github.com/sepehr071/iran-mcp",
+  "repository": "https://github.com/msmahdinejad/iran-bourse-mcp",
+  "license": "MIT",
+  "keywords": [
+    "iran",
+    "stocks",
+    "tsetmc.com"
+  ],
+  "mcpServers": {
+    "iran-bourse": {
+      "command": "uvx",
+      "args": [
+        "iran-bourse-mcp@0.4.0"
+      ]
+    }
+  }
+}

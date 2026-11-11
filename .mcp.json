@@ -360,6 +360,12 @@
         "iran-brokers-mcp@0.2.0"
       ]
     },
+    "iran-bourse": {
+      "command": "uvx",
+      "args": [
+        "iran-bourse-mcp@0.4.0"
+      ]
+    },
     "cbi": {
       "command": "uvx",
       "args": [
