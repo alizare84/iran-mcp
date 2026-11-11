@@ -54,7 +54,7 @@ sign-in).
 | Live gold, coin, dollar or crypto prices, price history | `tgju-mcp` | `tj_get_prices`, `tj_market_summary`, `tj_price_history` |
 | A coin's price on every Iranian crypto exchange (Nobitex, Wallex, Bitpin, Ramzinex, Tabdeal, OMPFinex, Exir), order books, candles | `iran-crypto-mcp` | `ic_compare_price`, then `ic_get_orderbook`, `ic_candles` |
 | The live Milli.gold 18k gold price, its history, fees and the cost of a trade, Milli news and help | `milligold-mcp` | `mg_get_price`, `mg_price_history`, `mg_trade_quote`, `mg_latest_posts` |
-| The live 18k gold price on Milli.gold, Wallgold, Melligold, Daric and Taline side by side, the cheapest place to buy | `iran-gold-mcp` | `gold_prices`, then `gold_milli_history` |
+| The live 18k gold price on Milli.gold, Wallgold, Melligold, Daric, Taline and Talano side by side, the cheapest place to buy | `iran-gold-mcp` | `gold_prices`, then `gold_milli_history` |
 | Tehran Stock Exchange and Fara Bourse quotes, top movers, order book, indices, real versus legal trading | `tsetmc-mcp` | `ts_search_symbols`, then `ts_get_quote`, `ts_market_movers`, `ts_indices` |
 | A listed company's filings: financial statements, EPS, monthly activity reports | `codal-mcp` | `cd_search_letters`, then `cd_letter` |
 | Stocks, ETFs, options, bonds, gold and screeners through brokers Mofid and Agah | `iran-brokers-mcp` | `br_search`, then `br_stock`, `br_history`; `br_market`, `br_screener` |
